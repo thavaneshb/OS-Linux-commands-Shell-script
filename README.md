@@ -42,23 +42,54 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
-
+```
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
+```
 
 cat < file2
 ## OUTPUT
-
-
+```
+anil aggarwal
+barun sengupta
+c.k. shukla
+lalit chowdury
+s.n. dasgupta
+```
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+```
+file1 file2 differ: byte 1, line 1
+```
  
 comm file1 file2
  ## OUTPUT
+ ```
+anil aggarwal
+	barun sengupta
+chanchal singhvi
+		c.k. shukla
+	lalit chowdury
+		s.n. dasgupta
+comm: file 2 is not in sorted order
+```
 
  
 diff file1 file2
 ## OUTPUT
+```
+< chanchal singhvi
+---
+> anil aggarwal
+> barun sengupta
+2a4
+> lalit chowdury
+4d5
+< sumit chakrobarty
+```
 
 
 #Filters
