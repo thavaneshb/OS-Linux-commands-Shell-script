@@ -192,11 +192,15 @@ cat newfile | grep -i -c "hello"
 
 grep -R ubuntu /etc
 ## OUTPUT
+![Screenshot from 2025-02-26 11-26-17](https://github.com/user-attachments/assets/a8098925-25cb-40e4-bf96-7316acb2bfbc)
+
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![Screenshot from 2025-02-26 11-27-48](https://github.com/user-attachments/assets/97828033-feb4-42b7-b33a-6102b83129ad)
+
 
 
 cat < newfile 
