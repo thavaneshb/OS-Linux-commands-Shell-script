@@ -173,12 +173,19 @@ Hello world
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+![Screenshot from 2025-02-26 11-20-36](https://github.com/user-attachments/assets/e78a65bf-a75c-454b-8058-9612636c49cd)
+
+
 
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+
+![Screenshot from 2025-02-26 11-17-34](https://github.com/user-attachments/assets/a77e5e66-6ef2-4e47-aced-55b5b26e4e06)
+
+
 
 
 
