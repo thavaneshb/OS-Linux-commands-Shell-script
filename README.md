@@ -253,38 +253,52 @@ egrep '(^hello)' newfile
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 11-16-54](https://github.com/user-attachments/assets/da41b83d-35d0-466a-93b6-645d59ba428d)
 
 
 
-egrep '(World$)' newfile 
+
+egrep '(World$)' newfile
 ## OUTPUT
+![Screenshot from 2025-03-03 11-20-22](https://github.com/user-attachments/assets/beb2872f-7417-441e-82b0-79c9d516c48c)
+
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 11-23-06](https://github.com/user-attachments/assets/5a75b737-75de-495a-b550-3a9e98b3a77a)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 11-24-32](https://github.com/user-attachments/assets/4e1f92e1-e3be-45b4-8120-ce3e08e7f23f)
+
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 11-26-54](https://github.com/user-attachments/assets/78d0965a-deb0-470e-833b-f51b69ddbceb)
+
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![Screenshot from 2025-03-03 11-28-24](https://github.com/user-attachments/assets/4eead13b-29de-4bbd-a18b-386d03f78f25)
+
 
 
 egrep l{2} newfile
 ## OUTPUT
-
+![Screenshot from 2025-03-03 11-29-36](https://github.com/user-attachments/assets/cf1175a8-43c5-4399-a7db-167322ffd800)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![Screenshot from 2025-03-03 11-30-22](https://github.com/user-attachments/assets/b39ec095-0413-44a6-8d2b-700cdd2ab17a)
+
+
 
 
 cat > file23
@@ -303,71 +317,97 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 11-32-01](https://github.com/user-attachments/assets/97634078-ce9e-4a5e-9772-202e81dc4b3f)
+
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
+![Screenshot from 2025-03-03 11-34-11](https://github.com/user-attachments/assets/d2e3e466-ca5d-4e8b-a9e0-64a5c8b22b69)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 11-35-52](https://github.com/user-attachments/assets/e405c035-bc50-4f39-a80a-69eb9a8cc66c)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
+![Screenshot from 2025-03-03 11-36-27](https://github.com/user-attachments/assets/72841290-6175-44d6-88fc-58175845a05e)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 11-36-57](https://github.com/user-attachments/assets/333fef07-c0fc-4b5a-a7ce-dceaea17f8a8)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
+![Screenshot from 2025-03-03 11-38-39](https://github.com/user-attachments/assets/ae07d716-09ee-487a-9c68-0871d6db740d)
+
+
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+
+![Screenshot from 2025-03-03 11-40-01](https://github.com/user-attachments/assets/b784fdea-ea20-4d55-b41e-31531616af01)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![Screenshot from 2025-03-03 11-40-48](https://github.com/user-attachments/assets/c8af116c-c196-4f16-98d9-ec490eba28f4)
+
 
 
 
 seq 10 
 ## OUTPUT
 
+![Screenshot from 2025-03-03 11-41-38](https://github.com/user-attachments/assets/8df1d3a5-34eb-45f3-a4dd-2d603e53aeeb)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![Screenshot from 2025-03-03 11-42-18](https://github.com/user-attachments/assets/c7b39bf3-7267-4864-86d4-c8d6c70fd0e2)
+
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+![Screenshot from 2025-03-03 11-43-46](https://github.com/user-attachments/assets/31a89601-ab21-483b-bedf-0164e4479f79)
+
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+
+![Screenshot from 2025-03-03 11-44-17](https://github.com/user-attachments/assets/81968fd3-2e9f-485e-b19c-9dca44573582)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![Screenshot from 2025-03-03 11-45-03](https://github.com/user-attachments/assets/152743f5-91ef-4af3-b225-ed5d1121acb1)
+
+
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+
+![Screenshot from 2025-03-03 11-45-53](https://github.com/user-attachments/assets/7ca193f5-edae-4bb0-b838-021b425e95a7)
+
 
 
 sed -n '2,4{s/^/$/;p}' file23
